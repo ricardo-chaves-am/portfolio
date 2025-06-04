@@ -1,0 +1,175 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* preenche a área sem distorcer (corta as bordas se necessário) */
+  z-index: -1;           /* envia o vídeo para trás de todo o conteúdo */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.navbar {
+  padding: 1rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #07c5ff;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease; /* animação suave */
+}
+
+.btn:hover {
+  background-color: #005f7a; /* tom mais escuro do azul claro */
+  color: #ffffff;            /* texto branco ao passar o mouse */
+  transform: translateY(-2px); /* leve “elevação” */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sobre h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+/* Exemplo para .paragrafo (Sobre) */
+.paragrafo {
+  background-color: #fdfdfd;             /* off-white */
+  border: 1px solid #000000;                /* borda cinza clara */
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem auto;                     /* espaço acima/abaixo */
+  max-width: 800px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  color: #000;
+  text-align: center;
+}
+
+.section {
+  padding: 3rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.section a {
+    color: #000000;
+}
+
+.project-card {
+  background-color: #fdfdfd;             /* off-white para não ficar branco puro */
+  border: 1px solid #ccc;                /* borda cinza clara */
+  border-left: 4px solid #07c5ff;        /* borda mais grossa à esquerda em azul claro */
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: border-left-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover no card: muda a cor da borda à esquerda e aumenta sombra */
+.project-card:hover {
+  border-left-color: #005f7a;            /* tom mais escuro de azul no hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.project-card p {
+  margin-bottom: 0.75rem;
+  color: #000000;
+}
+
+.project-card h3 {
+  margin-bottom: 0.75rem;
+  color: #0288d1;
+}
+
+.project-card ul {
+  margin: 0.5rem 0 1rem 1rem;
+  color: #000000;
+}
+
+.project-card a {
+  margin: 0.5rem 0 1rem 1rem;
+  color: #000000;
+}
+
+.project-card img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.formacao {
+  background-color: #fdfdfd;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  color: #000;
+}
+
+.contatos {
+  background-color: #fdfdfd;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  color: #000;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #fff;
+  margin-top: 3rem;
+}
+

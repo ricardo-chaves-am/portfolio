@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio – Ricardo Chaves</title>
+  <meta name="description" content="Portfólio pessoal de Ricardo Chaves, estudante de Ciência da Computação na UFRGS" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+    <!-- Vídeo de fundo -->
+    <video autoplay muted loop id="bg-video">
+        <source src="assets/videos/fundo.mp4" type="video/mp4" />
+        Seu navegador não suporta a tag de vídeo.
+    </video>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#formacao">Formação</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- Seção: Capa -->
+  <header class="hero" id="home">
+    <h1>Ricardo Chaves de Aragão Marques</h1>
+    <p>Estudante de Ciência da Computação | Desenvolvedor em Formação</p>
+    <a href="#projetos" class="btn">Veja meus projetos</a>
+  </header>
+
+  <!-- Seção: Sobre -->
+    <div class="sobre">
+        <section id="sobre" class="section-sobre">
+            <h2>Sobre Mim</h2>
+            <div class="paragrafo">
+                <p>
+                    Meu nome é Ricardo Chaves de Aragão Marques e estou no 3º semestre de Ciência da Computação na UFRGS. Desde que comecei a estudar programação, desenvolvi afinidade com automação de processos e linguagens como Python e C.
+
+                Trabalhei como estagiário no Instituto Rio-Grandense do Arroz (junho/2021 – junho/2022), onde criei planilhas de custos e realizei análise de séries temporais para apoiar decisões estratégicas. Em seguida, assumi a função de gerente comercial em uma loja de eletrônicos (junho/2022 – maio/2024), liderando equipe, cuidando de atendimento a clientes e desenvolvendo o site da empresa. Essas experiências reforçaram minha capacidade de comunicação, empatia e resolução de problemas.
+
+                Paralelamente, desenvolvi projetos pessoais em Python, C/C++, HTML/CSS e JavaScript. Entre eles, destaco:
+
+                Jogo Snake em C com Raylib, com fases, alimentos especiais e ranking de recordes;
+
+                Scripts de Web Scraping em Python para coleta de preços em e-commerce;
+
+                API Financeira em Python para consulta de dados de mercado;
+
+                Tour Virtual em 360° com hotspots usando Pannellum;
+
+                Ferramenta em Node.js para gerar páginas estáticas otimizadas para SEO.
+
+                Tenho conhecimentos em Git/GitHub, Microsoft Office, além de inglês avançado e espanhol intermediário. Meu objetivo é atuar como desenvolvedor júnior, aprofundando-me em desenvolvimento web full-stack ou outra área e entregando soluções de qualidade em equipe.
+                </p>
+            </div>   
+        </section>
+    </div>
+
+  <!-- Seção: Projetos -->
+  <section id="projetos" class="section">
+    <h2>Projetos</h2>
+
+    <!-- Card Projeto: Snake -->
+    <div class="project-card">
+      <h3>Jogo Snake (C + Raylib)</h3>
+      <p>Jogo 2D de Snake com fases, alimentos especiais e ranking de recordes.</p>
+      <ul>
+        <li><strong>Tecnologias:</strong> C, Raylib</li>
+        <li><strong>Destaques:</strong> cutscene de transição de fase, aumento de velocidade, persistência de recordes em arquivo TXT</li>
+      </ul>
+      <a href="https://github.com/seu-usuario/snake-raylib" target="_blank">Ver código no GitHub</a>
+      <img src="assets/images/screenshot-snake.jpg" alt="Screenshot do Jogo Snake">
+    </div>
+
+    <!-- Card Projeto: Web Scraping -->
+    <div class="project-card">
+      <h3>Web Scraping (Python)</h3>
+      <p>Script para coletar preços de produtos em sites de e-commerce e salvar em CSV.</p>
+      <ul>
+        <li><strong>Tecnologias:</strong> Python, BeautifulSoup, Requests</li>
+      </ul>
+      <a href="https://github.com/seu-usuario/web-scraping-python" target="_blank">Ver código no GitHub</a>
+      <img src="assets/images/screenshot-scraping.jpg" alt="Exemplo de dados coletados">
+    </div>
+
+    <!-- Card Projeto: API Financeira -->
+    <div class="project-card">
+        <h3>API Financeira (Python)</h3>
+        <p>Aplicação para coleta de dados de mercado financeiro em tempo real via API.</p>
+        <ul>
+            <li><strong>Linguagem:</strong> Python</li>
+            <li><strong>Destaques:</strong> consulta de cotações de ações, índices e criptomoedas; salvamento de histórico em CSV; integração com API pública (por exemplo, Alpha Vantage ou Yahoo Finance).</li>
+        </ul>
+        <a href="https://github.com/seu-usuario/api-financeira-python" target="_blank">Ver código no GitHub</a>
+        <img src="assets/images/screenshot-api-financeira.jpg" alt="Screenshot da API Financeira">
+    </div>
+
+    <!-- Card Projeto: Tour Virtual -->
+    <div class="project-card">
+        <h3>Tour Virtual (HTML, CSS, JavaScript)</h3>
+        <p>Tour interativo com fotos em 360° e navegação por hotspots usando a biblioteca Pannellum.</p>
+        <ul>
+            <li><strong>Tecnologias:</strong> HTML5, CSS3, JavaScript, Pannellum</li>
+            <li><strong>Destaques:</strong> visualização panorâmica 360°; hotspots clicáveis que levam a outras cenas; legendas e ícones informativos.</li>
+        </ul>
+        <a href="https://github.com/seu-usuario/tour-virtual-pannellum" target="_blank">Ver código no GitHub</a>
+        <img src="assets/images/screenshot-tour-virtual.jpg" alt="Screenshot do Tour Virtual">
+    </div>
+
+    <!-- Card Projeto: Replicação de Páginas para SEO -->
+    <div class="project-card">
+        <h3>Replicação de Páginas para SEO (Node.js)</h3>
+        <p>Gerador automático de páginas estáticas para SEO, consumindo XML de cidades, serviços, segmentos e blog.</p>
+        <ul>
+            <li><strong>Linguagem:</strong> Node.js</li>
+            <li><strong>Destaques:</strong> parsing de arquivos XML; geração de templates HTML com URLs amigáveis; criação de sitemap.xml seguindo padrões de buscadores.</li>
+        </ul>
+        <img src="assets/images/screenshot-seo-generator.jpg" alt="Screenshot do Gerador SEO">
+        </br>
+        <p>Optei por não compartilhar os códigos deste projeto por segurança.</p> 
+    </div>
+
+  </section>
+
+  <!-- Seção: Formação -->
+  <section id="formacao" class="section">
+    <h2>Formação Acadêmica</h2>
+    <ul class="formacao">
+      <li><strong>Ciência da Computação</strong> – UFRGS (2024 – cursando)</li>
+      <li><strong>Ciências Econômicas</strong> – UFRGS (2020 – 2023 - transferido)</li>
+      <li><strong>Inglês</strong> – Yázigi (2012 – 2016)</li>
+    </ul>
+  </section>
+
+  <!-- Seção: Contato -->
+  <section id="contato" class="section">
+    <h2>Contato</h2>
+    <div class="contatos">   
+        <p><strong>Email:</strong> <a href="mailto:ricardo.am@hotmail.com">ricardo.am@hotmail.com</a></p>
+        <p><strong>Telefone:</strong> (51) 9 9110-1322</p>
+        <p>
+        <strong>GitHub:</strong> <a href="https://github.com/ricardo-chaves-am" target="_blank">github.com/ricardo-chaves-am</a><br />
+        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ricardo-chaves-marques/" target="_blank">https://www.linkedin.com/in/ricardo-chaves-marques/</a>
+        </p>
+    </div> 
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Ricardo Chaves. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>
