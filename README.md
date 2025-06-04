@@ -2,7 +2,7 @@
 
 Este repositório contém o código-fonte do meu portfólio pessoal, publicado via GitHub Pages:
 
-👉 https://ricardo-chaves-am.github.io/portfolio-ricardo-chaves
+👉 https://ricardo-chaves-am.github.io/portfolio
 
 ## Estrutura
 - `index.html`: Página principal do portfólio.
