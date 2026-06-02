@@ -3,154 +3,469 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio – Ricardo Chaves</title>
-  <meta name="description" content="Portfólio pessoal de Ricardo Chaves, estudante de Ciência da Computação na UFRGS" />
+
+  <title>Ricardo Chaves | Desenvolvedor de Sites e Landing Pages</title>
+  <meta
+    name="description"
+    content="Portfólio de Ricardo Chaves, desenvolvedor web com experiência em sites institucionais, landing pages, portais administrativos, blogs, AWS e projetos front-end."
+  />
+  <meta name="author" content="Ricardo Chaves de Aragão Marques" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Ricardo Chaves | Desenvolvedor de Sites e Landing Pages" />
+  <meta
+    property="og:description"
+    content="Desenvolvimento de sites, landing pages, portais administrativos, blogs, integrações e deploy em AWS."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+
   <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ricardo Chaves de Aragão Marques",
+      "jobTitle": "Desenvolvedor Web",
+      "email": "mailto:ricardo.am@hotmail.com",
+      "telephone": "+55 51 99110-1322",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Porto Alegre",
+        "addressRegion": "RS",
+        "addressCountry": "BR"
+      },
+      "sameAs": [
+        "https://github.com/ricardo-chaves-am",
+        "https://github.com/ricardo-chaves-am/portfolio",
+        "https://www.linkedin.com/in/ricardo-chaves-marques/"
+      ],
+      "knowsAbout": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Node.js",
+        "Python",
+        "AWS",
+        "Amazon S3",
+        "CloudFront",
+        "Lambda",
+        "SES",
+        "Landing Pages",
+        "Desenvolvimento Web"
+      ]
+    }
+  </script>
 </head>
+
 <body>
-    <!-- Vídeo de fundo -->
-    <video autoplay muted loop id="bg-video">
-        <source src="assets/videos/fundo.mp4" type="video/mp4" />
-        Seu navegador não suporta a tag de vídeo.
-    </video>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#formacao">Formação</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-  </nav>
+  <video autoplay muted loop playsinline id="bg-video" aria-hidden="true">
+    <source src="assets/videos/fundo.mp4" type="video/mp4" />
+  </video>
 
-  <!-- Seção: Capa -->
-  <header class="hero" id="home">
-    <h1>Ricardo Chaves de Aragão Marques</h1>
-    <p>Estudante de Ciência da Computação | Desenvolvedor em Formação</p>
-    <a href="#projetos" class="btn">Veja meus projetos</a>
+  <div class="page-overlay" aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <nav class="navbar" aria-label="Navegação principal">
+      <a class="brand" href="#home" aria-label="Ir para o início">
+        <span class="brand__mark">RC</span>
+        <span class="brand__text">Ricardo Chaves</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" data-nav-menu>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Atuação</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#contato" class="nav-cta">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Seção: Sobre -->
-    <div class="sobre">
-        <section id="sobre" class="section-sobre">
-            <h2>Sobre Mim</h2>
-            <div class="paragrafo">
-                <p>
-                    Meu nome é Ricardo Chaves de Aragão Marques e estou no 3º semestre de Ciência da Computação na UFRGS. Desde que comecei a estudar programação, desenvolvi afinidade com automação de processos e linguagens como Python e C.
+  <main id="conteudo">
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__content" data-reveal>
+          <p class="eyebrow">Desenvolvedor Web • Sites • Landing Pages • AWS</p>
 
-                Trabalhei como estagiário no Instituto Rio-Grandense do Arroz (junho/2021 – junho/2022), onde criei planilhas de custos e realizei análise de séries temporais para apoiar decisões estratégicas. Em seguida, assumi a função de gerente comercial em uma loja de eletrônicos (junho/2022 – maio/2024), liderando equipe, cuidando de atendimento a clientes e desenvolvendo o site da empresa. Essas experiências reforçaram minha capacidade de comunicação, empatia e resolução de problemas.
+          <h1>Desenvolvo sites, landing pages e soluções web com foco em performance, estrutura e conversão.</h1>
 
-                Paralelamente, desenvolvi projetos pessoais em Python, C/C++, HTML/CSS e JavaScript. Entre eles, destaco:
+          <p class="hero__text">
+            Sou Ricardo Chaves, estudante de Ciência da Computação na UFRGS e desenvolvedor web com experiência em projetos completos: planejamento, front-end, integrações, área administrativa, publicação em AWS e manutenção contínua.
+          </p>
 
-                Jogo Snake em C com Raylib, com fases, alimentos especiais e ranking de recordes;
+          <div class="hero__actions">
+            <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+            <a class="btn btn-secondary" href="#contato">Falar comigo</a>
+          </div>
 
-                Scripts de Web Scraping em Python para coleta de preços em e-commerce;
+          <div class="hero__links" aria-label="Links profissionais">
+            <a href="https://github.com/ricardo-chaves-am" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://github.com/ricardo-chaves-am/portfolio" target="_blank" rel="noopener noreferrer">Portfólio</a>
+            <a href="https://www.linkedin.com/in/ricardo-chaves-marques/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
 
-                API Financeira em Python para consulta de dados de mercado;
+        <aside class="hero__card" data-reveal>
+          <span class="hero__card-label">Disponível para agências</span>
+          <h2>Desenvolvimento web ponta a ponta</h2>
 
-                Tour Virtual em 360° com hotspots usando Pannellum;
+          <ul class="hero__list">
+            <li>Sites institucionais e landing pages</li>
+            <li>Portais administrativos e blogs</li>
+            <li>Formulários, integrações e automações</li>
+            <li>Hospedagem e backend com AWS</li>
+            <li>Estrutura técnica para performance e SEO</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
 
-                Ferramenta em Node.js para gerar páginas estáticas otimizadas para SEO.
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <span class="section-kicker">Sobre</span>
+          <h2>Perfil profissional</h2>
+        </div>
 
-                Tenho conhecimentos em Git/GitHub, Microsoft Office, além de inglês avançado e espanhol intermediário. Meu objetivo é atuar como desenvolvedor júnior, aprofundando-me em desenvolvimento web full-stack ou outra área e entregando soluções de qualidade em equipe.
-                </p>
-            </div>   
-        </section>
-    </div>
+        <div class="about-card" data-reveal>
+          <p>
+            Atuo no desenvolvimento de sites, landing pages e soluções web para empresas que precisam de presença digital profissional, páginas bem estruturadas e processos mais organizados. Tenho experiência criando projetos desde a etapa inicial de planejamento até a publicação, configuração de domínio, hospedagem, formulários, ajustes pós-lançamento e manutenção.
+          </p>
 
-  <!-- Seção: Projetos -->
-  <section id="projetos" class="section">
-    <h2>Projetos</h2>
+          <p>
+            Além do front-end, também desenvolvo recursos de apoio como portais administrativos para publicação de posts, edição de conteúdos e alterações em páginas. No backend e infraestrutura, trabalho com serviços da AWS, incluindo S3, CloudFront, Lambda, SES e configurações relacionadas à publicação de aplicações web.
+          </p>
 
-    <!-- Card Projeto: Snake -->
-    <div class="project-card">
-      <h3>Jogo Snake (C + Raylib)</h3>
-      <p>Jogo 2D de Snake com fases, alimentos especiais e ranking de recordes.</p>
-      <ul>
-        <li><strong>Tecnologias:</strong> C, Raylib</li>
-        <li><strong>Destaques:</strong> cutscene de transição de fase, aumento de velocidade, persistência de recordes em arquivo TXT</li>
-      </ul>
-      <a href="https://github.com/seu-usuario/snake-raylib" target="_blank">Ver código no GitHub</a>
-      <img src="assets/images/screenshot-snake.JPG" alt="Screenshot do Jogo Snake">
-    </div>
+          <p>
+            Tenho boa visão de negócio por já ter atuado com atendimento, gestão comercial, marketing digital e resolução de problemas com clientes. Isso me ajuda a desenvolver páginas pensando não apenas no código, mas também na clareza da oferta, experiência do usuário, conversão e manutenção do projeto.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <!-- Card Projeto: Web Scraping -->
-    <div class="project-card">
-      <h3>Web Scraping (Python)</h3>
-      <p>Script para coletar preços de produtos em sites de e-commerce e salvar em CSV.</p>
-      <ul>
-        <li><strong>Tecnologias:</strong> Python, BeautifulSoup, Requests</li>
-      </ul>
-      <a href="https://github.com/seu-usuario/web-scraping-python" target="_blank">Ver código no GitHub</a>
-      <img src="assets/images/screenshot-scraping.JPG" alt="Exemplo de dados coletados">
-    </div>
+    <section class="section section-alt" id="servicos">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <span class="section-kicker">Atuação</span>
+          <h2>Onde posso contribuir</h2>
+        </div>
 
-    <!-- Card Projeto: API Financeira -->
-    <div class="project-card">
-        <h3>API Financeira (Python)</h3>
-        <p>Aplicação para coleta de dados de mercado financeiro em tempo real via API.</p>
-        <ul>
-            <li><strong>Linguagem:</strong> Python</li>
-            <li><strong>Destaques:</strong> consulta de cotações de ações, índices e criptomoedas; salvamento de histórico em CSV; integração com API pública (por exemplo, Alpha Vantage ou Yahoo Finance).</li>
-        </ul>
-        <a href="https://github.com/seu-usuario/api-financeira-python" target="_blank">Ver código no GitHub</a>
-        <img src="assets/images/screenshot-api-financeira.JPG" alt="Screenshot da API Financeira">
-    </div>
+        <div class="services-grid">
+          <article class="service-card" data-reveal>
+            <div class="service-card__icon">01</div>
+            <h3>Sites institucionais</h3>
+            <p>
+              Desenvolvimento de sites profissionais, responsivos e organizados, com páginas internas, componentes reutilizáveis e estrutura pensada para evolução.
+            </p>
+          </article>
 
-    <!-- Card Projeto: Tour Virtual -->
-    <div class="project-card">
-        <h3>Tour Virtual (HTML, CSS, JavaScript)</h3>
-        <p>Tour interativo com fotos em 360° e navegação por hotspots usando a biblioteca Pannellum.</p>
-        <ul>
-            <li><strong>Tecnologias:</strong> HTML5, CSS3, JavaScript, Pannellum</li>
-            <li><strong>Destaques:</strong> visualização panorâmica 360°; hotspots clicáveis que levam a outras cenas; legendas e ícones informativos.</li>
-        </ul>
-        <a href="https://github.com/seu-usuario/tour-virtual-pannellum" target="_blank">Ver código no GitHub</a>
-        <img src="assets/images/screenshot-tour-virtual.JPG" alt="Screenshot do Tour Virtual">
-    </div>
+          <article class="service-card" data-reveal>
+            <div class="service-card__icon">02</div>
+            <h3>Landing pages</h3>
+            <p>
+              Criação de páginas focadas em campanha, captação de leads, apresentação de produtos, serviços ou ofertas específicas.
+            </p>
+          </article>
 
-    <!-- Card Projeto: Replicação de Páginas para SEO -->
-    <div class="project-card">
-        <h3>Replicação de Páginas para SEO (Node.js)</h3>
-        <p>Gerador automático de páginas estáticas para SEO, consumindo XML de cidades, serviços, segmentos e blog.</p>
-        <ul>
-            <li><strong>Linguagem:</strong> Node.js</li>
-            <li><strong>Destaques:</strong> parsing de arquivos XML; geração de templates HTML com URLs amigáveis; criação de sitemap.xml seguindo padrões de buscadores.</li>
-        </ul>
-        <img src="assets/images/screenshot-seo-generator.JPG" alt="Screenshot do Gerador SEO">
-        </br>
-        <p>Optei por não compartilhar os códigos deste projeto por segurança.</p> 
-    </div>
+          <article class="service-card" data-reveal>
+            <div class="service-card__icon">03</div>
+            <h3>Admin e blog</h3>
+            <p>
+              Desenvolvimento de áreas administrativas para publicação de posts, gerenciamento de conteúdo e ajustes em páginas do site.
+            </p>
+          </article>
 
-  </section>
+          <article class="service-card" data-reveal>
+            <div class="service-card__icon">04</div>
+            <h3>AWS e deploy</h3>
+            <p>
+              Publicação e configuração de projetos com S3, CloudFront, Lambda, SES, domínios, certificados e invalidação de cache.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <!-- Seção: Formação -->
-  <section id="formacao" class="section">
-    <h2>Formação Acadêmica</h2>
-    <ul class="formacao">
-      <li><strong>Ciência da Computação</strong> – UFRGS (2024 – cursando)</li>
-      <li><strong>Ciências Econômicas</strong> – UFRGS (2020 – 2023 - transferido)</li>
-      <li><strong>Inglês</strong> – Yázigi (2012 – 2016)</li>
-    </ul>
-  </section>
+    <section class="section" id="projetos">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <span class="section-kicker">Projetos</span>
+          <h2>Trabalhos e experiências práticas</h2>
+        </div>
 
-  <!-- Seção: Contato -->
-  <section id="contato" class="section">
-    <h2>Contato</h2>
-    <div class="contatos">   
-        <p><strong>Email:</strong> <a href="mailto:ricardo.am@hotmail.com">ricardo.am@hotmail.com</a></p>
-        <p><strong>Telefone:</strong> (51) 9 9110-1322</p>
-        <p>
-        <strong>GitHub:</strong> <a href="https://github.com/ricardo-chaves-am" target="_blank">github.com/ricardo-chaves-am</a><br />
-        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ricardo-chaves-marques/" target="_blank">https://www.linkedin.com/in/ricardo-chaves-marques/</a>
-        </p>
-    </div> 
-  </section>
+        <div class="projects-grid">
+          <article class="project-card project-card--featured" data-reveal>
+            <div class="project-card__content">
+              <span class="project-card__tag">Web • AWS • Conteúdo</span>
+              <h3>Sites e landing pages para empresas</h3>
+              <p>
+                Desenvolvimento de páginas institucionais e comerciais com estrutura responsiva, componentes reutilizáveis, formulários, integrações, publicação e ajustes de produção.
+              </p>
 
-  <!-- Footer -->
+              <ul>
+                <li>Planejamento da estrutura das páginas</li>
+                <li>HTML, CSS, JavaScript e Node.js</li>
+                <li>Deploy em AWS S3 e CloudFront</li>
+                <li>Formulários com Lambda e SES</li>
+              </ul>
+            </div>
+
+            <div class="project-card__media">
+              <img src="assets/images/screenshot-sites.JPG" alt="Exemplo de site ou landing page desenvolvida por Ricardo Chaves" />
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__content">
+              <span class="project-card__tag">Admin • Blog</span>
+              <h3>Portal administrativo para site</h3>
+              <p>
+                Desenvolvimento de estrutura administrativa para publicação de posts de blog, edição de conteúdos e apoio à manutenção do site.
+              </p>
+
+              <ul>
+                <li>Rotas administrativas</li>
+                <li>Publicação de posts</li>
+                <li>Geração de páginas</li>
+                <li>Organização de dados e templates</li>
+              </ul>
+            </div>
+
+            <div class="project-card__media">
+              <img src="assets/images/screenshot-admin.JPG" alt="Exemplo de portal administrativo desenvolvido por Ricardo Chaves" />
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__content">
+              <span class="project-card__tag">Node.js • Automação</span>
+              <h3>Gerador de páginas estáticas</h3>
+              <p>
+                Sistema em Node.js para criação de páginas estáticas a partir de dados estruturados, com templates, URLs amigáveis, sitemap e organização voltada para projetos de grande volume.
+              </p>
+
+              <ul>
+                <li>Leitura de arquivos XML e JSON</li>
+                <li>Templates HTML reutilizáveis</li>
+                <li>Geração automatizada de páginas</li>
+                <li>Estrutura técnica para buscadores</li>
+              </ul>
+            </div>
+
+            <div class="project-card__media">
+              <img src="assets/images/screenshot-generator.JPG" alt="Exemplo de sistema gerador de páginas estáticas" />
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__content">
+              <span class="project-card__tag">HTML • CSS • JavaScript</span>
+              <h3>Tour virtual 360°</h3>
+              <p>
+                Tour interativo com fotos panorâmicas, navegação por hotspots, cenas conectadas e interface web para experiência imersiva.
+              </p>
+
+              <ul>
+                <li>Pannellum</li>
+                <li>Hotspots de navegação</li>
+                <li>Interface responsiva</li>
+              </ul>
+            </div>
+
+            <div class="project-card__media">
+              <img src="assets/images/screenshot-tour-virtual.JPG" alt="Screenshot do tour virtual desenvolvido por Ricardo Chaves" />
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__content">
+              <span class="project-card__tag">Python • Dados</span>
+              <h3>Web scraping e automações</h3>
+              <p>
+                Scripts em Python para coleta, organização e exportação de dados, com foco em ganho de produtividade e apoio à análise de informações.
+              </p>
+
+              <ul>
+                <li>Requests e BeautifulSoup</li>
+                <li>Exportação para CSV</li>
+                <li>Coleta de preços e dados de produtos</li>
+              </ul>
+            </div>
+
+            <div class="project-card__media">
+              <img src="assets/images/screenshot-scraping.JPG" alt="Exemplo de automação em Python para coleta de dados" />
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__content">
+              <span class="project-card__tag">C • Raylib</span>
+              <h3>Jogo Snake</h3>
+              <p>
+                Jogo 2D desenvolvido em C com Raylib, incluindo movimentação, colisões, pontuação, controle de velocidade e fases personalizadas.
+              </p>
+
+              <ul>
+                <li>Lógica de jogo em C</li>
+                <li>Colisões e pontuação</li>
+                <li>Ranking salvo em arquivo</li>
+              </ul>
+            </div>
+
+            <div class="project-card__media">
+              <img src="assets/images/screenshot-snake.JPG" alt="Screenshot do jogo Snake em C com Raylib" />
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="stack">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <span class="section-kicker">Stack</span>
+          <h2>Tecnologias e ferramentas</h2>
+        </div>
+
+        <div class="stack-grid" data-reveal>
+          <div class="stack-group">
+            <h3>Front-end</h3>
+            <div class="tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Responsividade</span>
+              <span>Performance</span>
+              <span>Acessibilidade</span>
+            </div>
+          </div>
+
+          <div class="stack-group">
+            <h3>Backend e automação</h3>
+            <div class="tags">
+              <span>Node.js</span>
+              <span>Python</span>
+              <span>APIs</span>
+              <span>XML</span>
+              <span>JSON</span>
+              <span>Web Scraping</span>
+            </div>
+          </div>
+
+          <div class="stack-group">
+            <h3>AWS e publicação</h3>
+            <div class="tags">
+              <span>S3</span>
+              <span>CloudFront</span>
+              <span>Lambda</span>
+              <span>SES</span>
+              <span>Route 53</span>
+              <span>ACM</span>
+            </div>
+          </div>
+
+          <div class="stack-group">
+            <h3>Processo</h3>
+            <div class="tags">
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>Deploy</span>
+              <span>Manutenção</span>
+              <span>SEO técnico</span>
+              <span>UX/UI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="formacao">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <span class="section-kicker">Formação</span>
+          <h2>Formação acadêmica e idiomas</h2>
+        </div>
+
+        <div class="timeline" data-reveal>
+          <article class="timeline-item">
+            <span>2024 — atual</span>
+            <h3>Ciência da Computação — UFRGS</h3>
+            <p>Cursando 3º semestre.</p>
+          </article>
+
+          <article class="timeline-item">
+            <span>2020 — 2023</span>
+            <h3>Ciências Econômicas — UFRGS</h3>
+            <p>Curso iniciado antes da transferência para Ciência da Computação.</p>
+          </article>
+
+          <article class="timeline-item">
+            <span>2012 — 2016</span>
+            <h3>Curso de Inglês — Yázigi</h3>
+            <p>Inglês avançado. Espanhol intermediário.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contato">
+      <div class="container">
+        <div class="contact-card" data-reveal>
+          <div>
+            <span class="section-kicker">Contato</span>
+            <h2>Vamos conversar?</h2>
+            <p>
+              Estou aberto a oportunidades em agências e projetos de desenvolvimento web, especialmente sites, landing pages, manutenção, admin/blog e publicação em AWS.
+            </p>
+          </div>
+
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:ricardo.am@hotmail.com">Enviar e-mail</a>
+            <a class="btn btn-secondary" href="https://wa.me/5551991101322" target="_blank" rel="noopener noreferrer">Chamar no WhatsApp</a>
+          </div>
+
+          <ul class="contact-list">
+            <li>
+              <strong>E-mail</strong>
+              <a href="mailto:ricardo.am@hotmail.com">ricardo.am@hotmail.com</a>
+            </li>
+
+            <li>
+              <strong>Telefone</strong>
+              <a href="tel:+5551991101322">(51) 9 9110-1322</a>
+            </li>
+
+            <li>
+              <strong>GitHub</strong>
+              <a href="https://github.com/ricardo-chaves-am" target="_blank" rel="noopener noreferrer">github.com/ricardo-chaves-am</a>
+            </li>
+
+            <li>
+              <strong>LinkedIn</strong>
+              <a href="https://www.linkedin.com/in/ricardo-chaves-marques/" target="_blank" rel="noopener noreferrer">linkedin.com/in/ricardo-chaves-marques</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <footer class="footer">
-    <p>© 2025 Ricardo Chaves. Todos os direitos reservados.</p>
+    <div class="container footer__inner">
+      <p>© <span data-current-year></span> Ricardo Chaves. Todos os direitos reservados.</p>
+      <a href="#home">Voltar ao topo</a>
+    </div>
   </footer>
 
   <script src="assets/js/scripts.js"></script>
